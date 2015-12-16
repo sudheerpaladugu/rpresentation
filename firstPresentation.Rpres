@@ -1,0 +1,62 @@
+First R Presentation
+===
+id: home
+author: sdr paladugu
+date:   `r date()`
+autosize: true
+
+First Slide
+===
+id: first
+transition: linear
+left: 70%
+
+<span style="font-size:50px;font-weight:normal;font-family:Times New Roman;color: #00ff00;">
+For more details on authoring R presentations please visit - </span>
+<https://support.rstudio.com/hc/en-us/articles/200486468>.
+- Bullet 1
+- Bullet 2
+- Bullet 3 
+
+</span>
+Slide With Code
+===
+id: second
+transition: concave
+incremental: true
+font-family: verdana
+
+```{r}
+
+library(datasets)
+summary(cars)
+```
+testing square $x^2$
+
+[Go to slide 1](#/first)
+
+Slide With Plot
+===
+id: third
+transition: zoom
+
+```{r, echo=FALSE}
+plot(cars)
+```
+  
+First column
+***
+Second column
+
+
+qplot Slide
+===
+## A Simple Plot ##
+
+Let us create a simple scatterplot.
+
+```{r simple-plot, fig.height = 6, fig.align = 'center', message = F}
+require(ggplot2)
+qplot(wt, mpg, data = mtcars)
+```
+
